@@ -1,5 +1,5 @@
-const { Router } = requiere('express');
-const TodoModel = requiere('../models/todos.route.js');
+const { Router } = require('express');
+const TodoModel = require('../models/todos.route');
 
 const router = Router();
 

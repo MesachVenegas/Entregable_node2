@@ -8,7 +8,7 @@ const dbConnection = require('./utils/connection');
 const app = express();
 const PORT = 8000;
 
-
+TodoModel;
 dbConnection.authenticate()
     .then(() => {
         console.log('Connected to database');
@@ -19,6 +19,7 @@ dbConnection.authenticate()
 
 app.use(morgan());
 app.use(express.json());
+app.use(toDos)
 
 
 app.listen(PORT, () => {
